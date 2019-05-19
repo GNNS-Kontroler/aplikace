@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"
+    />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style-domov.css" />
+    <link rel="stylesheet" type="text/css" href="css/style-mereni.css" />
+    <link rel="stylesheet" type="text/css" href="css/style-vytyceni.css" />
+    <link rel="stylesheet" type="text/css" href="css/style-skyplot.css" />
+    <title>GNSS Kontroler</title>
+  </head>
+  <body>
+    <header>
+      <div class="info">
+        <div>
+          <img src="img/ble_disconnected.svg" id="INFble" />
+        </div>
+        <div class="fix">
+          <svg
+            version="1.1"
+            id="INFfix"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 438.533 438.533"
+            style="enable-background:new 0 0 438.533 438.533;"
+            xml:space="preserve"
+            class="pulse"
+          >
+            <g>
+              <path
+                d="M409.133,109.203c-19.608-33.592-46.205-60.189-79.798-79.796C295.736,9.801,259.058,0,219.273,0c-39.781,0-76.47,9.801-110.063,29.407c-33.595,19.604-60.192,46.201-79.8,79.796C9.801,142.8,0,179.489,0,219.267c0,39.78,9.804,76.463,29.407,110.062c19.607,33.592,46.204,60.189,79.799,79.798c33.597,19.605,70.283,29.407,110.063,29.407s76.47-9.802,110.065-29.407c33.593-19.602,60.189-46.206,79.795-79.798c19.603-33.596,29.403-70.284,29.403-110.062C438.533,179.485,428.732,142.795,409.133,109.203z"
+              />
+            </g>
+          </svg>
+        </div>
+        <div>
+          <img
+            src="img/half-battery-energy-status-symbol.svg"
+            id="INFbaterka"
+          />
+        </div>
+        <div class="sat">
+          <img src="img/radio-control.svg" />
+          <span id="INFsatelity">0/0</span>
+        </div>
+      </div>
+      <div class="nastaveni">
+        <button id="nastaveni">
+          <img src="img/settings-work-tool.svg" />
+        </button>
+      </div>
+    </header>
+    <div id="plocha" class="plocha">
+      <div></div>
+    </div>
+    <footer>
+      <nav class="nav_bar">
+        <button id="domov"><img src="img/home.svg" /></button>
+        <button id="mereni">
+          <img src="img/gps-localization-interface-symbol.svg" />
+        </button>
+        <button id="vytyceni">
+          <img src="img/pointer2.svg" />
+        </button>
+        <button id="skyplot">
+          <img src="img/moon-orbit-around-earth.svg" />
+        </button>
+      </nav>
+    </footer>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/sqlDatabaze.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/bluetooth.js"></script>
+    <script type="text/javascript" src="js/nmea.js"></script>
+    <script type="text/javascript" src="js/skyplott.js"></script>
+    <script type="text/javascript" src="js/domov.js"></script>
+    <script type="text/javascript" src="js/mereni.js"></script>
+    <script type="text/javascript" src="js/soubory.js"></script>
+    <script type="text/javascript" src="js/nastaveni.js"></script>
+    <script type="text/javascript" src="js/vytyceni.js"></script>
+    <script type="text/javascript" src="js/ntrip.js"></script>
+    <script type="text/javascript" src="js/CalcGeodesy.js"></script>
+  </body>
+</html>

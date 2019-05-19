@@ -1,0 +1,25 @@
+# Non-project-specific build files:
+build.xml
+local.properties
+/gradlew
+/gradlew.bat
+/gradle
+# Ant builds
+ant-build
+ant-gen
+# Eclipse builds
+gen
+out
+# Gradle builds
+/build
+*.bin
+*.log
+
+/node_modules
+/hooks
+# App platform binaries and built files
+/platforms
+
+# Optional to ignore plugin Git clones
+/plugins
+

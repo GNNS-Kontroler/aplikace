@@ -1,0 +1,133 @@
+div.vytyceni {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  display: inline-block;
+}
+
+div.vytyceni canvas {
+  width: 100%;
+  height: 50%;
+}
+
+div.vytyceni button {
+  width: 70%;
+  height: 50px;
+  margin-left: 15%;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+div.vytyceni button.schovany {
+  display: none;
+}
+
+div.vytyceni button.VYTcollapse {
+  height: 25px;
+  width: 100%;
+  margin: 0;
+  margin-top: 5px;
+  border-radius: 0;
+  border: 0;
+  color: white;
+  background-color: gray;
+}
+
+/*Roztahujici se div*/
+div.vytyceni div {
+  top: 0;
+}
+
+div.vytyceni div.collapsible {
+  margin-top: 5px;
+  width: 100%;
+  height: auto;
+  display: none;
+}
+
+div.vytyceni div.modal {
+  display: none;
+  padding: 10px;
+  position: absolute;
+  /* border-radius: 10px; */
+  height: calc(100% - 20px);
+  width: calc(100% - 20px);
+  background-color: #9e9e9e;
+  z-index: 100;
+}
+
+div.vytyceni div.modal button.close {
+  position: fixed;
+  top: 5px;
+  left: calc(100% - 40px - 5px);
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 0px;
+  z-index: 100;
+}
+
+div.vytyceni div.modal div.Seznam {
+  position: relative;
+  height: 98%;
+  width: 98%;
+  top: 1%;
+  left: 1%;
+  margin: 0px;
+  overflow: scroll;
+}
+
+div.vytyceni div.modal p.modalInfo {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+div.vytyceni div.modal div.Seznam div.bod {
+  width: 100%;
+  min-height: 40px;
+  margin-top: 15px;
+  border-radius: 10px;
+  padding-bottom: 5px;
+  display: inline-flex;
+  box-shadow: 1px 1px 10px #235;
+}
+
+div.vytyceni div.modal div.Seznam div.bod div.info {
+  top: 5px;
+  left: 5px;
+  width: calc(100% - 55px);
+  min-height: 40px;
+  font-size: 12px;
+  font-family: sans-serif;
+}
+
+div.vytyceni div.modal div.Seznam div.bod div.info p {
+  margin: 0;
+  padding-left: 5px;
+}
+
+div.vytyceni div.modal div.Seznam div.bod button {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin: 0;
+  border: 0;
+  padding: 2px;
+  top: 5px;
+  left: 5px;
+  /* left: calc(100% - 35px - 5px); */
+}
+
+div.vytyceni div.modal div.Seznam div.bod:first-child {
+  margin-top: 20px;
+}
+
+div.vytyceni div.modal div.Seznam div.bod:last-child {
+  margin-bottom: 30px;
+}

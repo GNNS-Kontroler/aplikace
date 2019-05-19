@@ -1,0 +1,105 @@
+div.mereni {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  display: inline-block;
+  padding-top: 10px;
+}
+
+div.mereni input {
+  width: 70%;
+  height: 25px;
+  margin-left: 15%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(99, 99, 99);
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+div.mereni label {
+  margin-left: 15%;
+  margin-top: 20px;
+}
+
+div.mereni p.zobrazCas {
+  width: 70%;
+  margin-left: 15%;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+div.mereni p {
+  margin-left: 10px;
+}
+
+div.mereni button {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 4px;
+  border-color: rgb(99, 99, 99);
+  background-color: orange;
+  margin-left: calc((100% - 100px) / 2);
+}
+
+div.mereni button.BTRaw {
+  width: 70%;
+  height: 50px;
+  margin-left: 15%;
+  border-radius: 10px;
+  border: 0;
+  background-color: rgb(200, 200, 200);
+  border-width: 4px;
+  border-color: rgb(99, 99, 99);
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+div.mereni hr {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-width: 2px;
+}
+
+div.mereni input.Slider {
+  -webkit-appearance: none;
+  height: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  background: rgb(180, 180, 180);
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+div.mereni input.Slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: black;
+}
+
+/* TABULKA */
+
+table {
+  margin-left: 15px;
+}
+
+th {
+  text-align: left;
+}
+
+td {
+  padding-left: 10px;
+}

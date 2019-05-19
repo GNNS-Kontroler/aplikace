@@ -1,0 +1,187 @@
+img.domovLogo {
+  height: 150px;
+  width: 150px;
+}
+
+div.domov {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+div.domov p {
+  margin-bottom: 2px;
+  margin-left: 5px;
+}
+
+div.domov hr {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+div.domov div {
+  position: relative;
+  height: auto;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  top: 0;
+}
+
+div.domov div.BTselect {
+  position: relative;
+  height: auto;
+  width: 100%;
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+div.domov div.BTselect button {
+  position: absolute;
+  border: 0;
+  background-color: rgb(150, 150, 150);
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  margin: 0;
+  margin-left: 15%;
+}
+
+div.domov div.BTselect select {
+  width: 70%;
+  height: 50px;
+  margin-left: 15%;
+  padding-left: 75px;
+  border-radius: 25px;
+}
+
+div.domov div button:last-child {
+  margin-top: 5px;
+}
+
+div.domov div button {
+  width: 70%;
+  height: 50px;
+  margin-left: 15%;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+div.domov div.modal {
+  overflow: auto;
+  display: none;
+  padding: 10px;
+  position: absolute;
+  border-radius: 10px;
+  height: calc(100% - 20px);
+  width: calc(100% - 20px);
+  background-color: #9e9e9e;
+}
+
+div.domov div.modal p {
+  margin-top: 5px;
+  margin-left: 15%;
+}
+
+div.domov div.modal input {
+  width: 70%;
+  margin-left: 15%;
+  height: 30px;
+  margin-top: 10px;
+}
+
+div.domov div.modal textarea.popis {
+  width: 70%;
+  margin-left: 15%;
+  height: 150px;
+}
+
+div.domov div.modal button {
+  left: 0px;
+  bottom: 20px;
+}
+
+div.domov div.modal button.close {
+  position: fixed;
+  top: 5px;
+  left: calc(100% - 40px - 5px);
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 0px;
+  z-index: 100;
+}
+
+@keyframes posun {
+  from {
+    transform: translateY(-2000px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+div.domov div.modal div.Seznam {
+  position: relative;
+  height: 98%;
+  width: 98%;
+  top: 1%;
+  left: 1%;
+  margin: 0px;
+  overflow: scroll;
+}
+
+div.domov div.modal p.modalInfo {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+div.domov div.modal div.Seznam div.bod {
+  width: 100%;
+  min-height: 40px;
+  margin-top: 15px;
+  border-radius: 10px;
+  padding-bottom: 5px;
+
+  box-shadow: 1px 1px 10px #235;
+}
+
+div.domov div.modal div.Seznam div.bod div.info {
+  top: 5px;
+  left: 5px;
+  width: calc(100% - 55px);
+  min-height: 40px;
+  font-size: 12px;
+  font-family: sans-serif;
+}
+
+div.domov div.modal div.Seznam div.bod div.info p {
+  margin: 0;
+}
+
+div.domov div.modal div.Seznam div.bod button {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin: 0;
+  border: 0;
+  padding: 2px;
+  top: 5px;
+  left: calc(100% - 35px - 5px);
+}
+
+div.domov div.modal div.Seznam div.bod:first-child {
+  margin-top: 20px;
+}
+
+div.domov div.modal div.Seznam div.bod:last-child {
+  margin-bottom: 30px;
+}
